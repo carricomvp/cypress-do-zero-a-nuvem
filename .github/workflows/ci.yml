@@ -11,12 +11,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: List files (confirma package.json)
-        run: ls -l
-
-      - name: Check npm scripts
-        run: npm run
-
       - name: Run Cypress via npm
         run: npm run test:cloud
         env:
